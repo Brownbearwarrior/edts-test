@@ -33,8 +33,8 @@ public class BookingController {
         return internalService.findDetailBookingByOrder(orderCode);
     }
 
-    @PatchMapping("/update-status/{bookingCode}/{status}")
-    public ResponseEntity<DataResponse<Object>> updatePatchStatus(@PathVariable String bookingCode, @PathVariable String status){
-        return internalService.updatePatchStatus(bookingCode, status);
+    @PatchMapping("/update-status/{orderCode}/{status}")
+    public ResponseEntity<DataResponse<Object>> updatePatchStatus(@PathVariable String orderCode, @PathVariable String status){
+        return internalService.updatePatchStatus(orderCode, status);
     }
 }

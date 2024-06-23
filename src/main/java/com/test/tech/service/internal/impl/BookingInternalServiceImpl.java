@@ -16,7 +16,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -63,8 +62,8 @@ public class BookingInternalServiceImpl implements BookingInternalService {
     }
 
     @Override
-    public ResponseEntity<DataResponse<Object>> updatePatchStatus(String bookingCode, String status) {
-        Booking booking = this.findBookingByBookingCode(bookingCode);
+    public ResponseEntity<DataResponse<Object>> updatePatchStatus(String orderCode, String status) {
+        Booking booking = this.findBookingByOrderCode(orderCode);
 
         if (Objects.isNull(booking)){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ResponseUtils.toResponse(0, "not found", null));
