@@ -1,21 +1,23 @@
 package com.test.tech.entity.dto.request;
 
-import com.test.tech.entity.dto.internal.ConcertTicket;
+import com.test.tech.entity.dto.internal.ConcertTicketInternal;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 public class ConcertRequest {
     private String concertName;
     private String mainPerformer;
     private String city;
     private String location;
     private Date heldDate;
-    private ConcertTicket ticket;
+    private List<ConcertTicketInternal> ticket;
 }

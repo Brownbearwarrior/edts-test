@@ -2,15 +2,18 @@ package com.test.tech.entity.dto.request;
 
 import com.test.tech.entity.dto.internal.BookingTicket;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
+
+import java.util.List;
 
 @Getter
 @Setter
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 public class BookingRequest {
     private String concertCode;
     private int totalPrice;
-    private BookingTicket ticket;
+    private List<BookingTicket> ticket;
 }

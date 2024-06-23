@@ -31,6 +31,9 @@ public class Ticket {
     @Column(name = "concert_code")
     private String concertCode;
 
+    @Column(name = "concert_ticket_code")
+    private String concertTicketCode;
+
     @Column(name = "seat_code")
     private String seatCode;
 

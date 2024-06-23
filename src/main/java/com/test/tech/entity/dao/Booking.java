@@ -22,6 +22,9 @@ public class Booking {
     @Column(name = "booking_code")
     private String bookingCode;
 
+    @Column(name = "order_code")
+    private String orderCode;
+
     @Column(name = "concert_code")
     private String concertCode;
 

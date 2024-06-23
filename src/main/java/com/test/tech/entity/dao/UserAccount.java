@@ -3,8 +3,6 @@ package com.test.tech.entity.dao;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.Date;
-
 @Getter
 @Setter
 @ToString
@@ -25,16 +23,4 @@ public class UserAccount {
 
     @Column(name = "full_name")
     private String fullName;
-
-    @Column(name = "created_by")
-    private String createdBy;
-
-    @Column(name = "created_at")
-    private Date createdAt;
-
-    @Column(name = "updated_by")
-    private String updatedBy;
-
-    @Column(name = "updated_at")
-    private Date updatedAt;
 }

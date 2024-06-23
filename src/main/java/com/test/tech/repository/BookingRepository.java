@@ -1,4 +1,9 @@
 package com.test.tech.repository;
 
-public interface BookingRepository {
+import com.test.tech.entity.dao.Booking;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BookingRepository extends JpaRepository<Booking, String> {
 }

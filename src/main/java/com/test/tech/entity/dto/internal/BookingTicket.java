@@ -9,6 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class BookingTicket {
+    private String concertTicketCode;
     private String ticketNumber;
     private String fullName;
     private String idNumber;
